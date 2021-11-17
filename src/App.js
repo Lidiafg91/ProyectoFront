@@ -22,7 +22,7 @@ function App() {
 // useState pintarloggin(true/false)
 const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
-
+// probando la prueba del git
 useEffect( async() => {  
   
   if(document.cookie != ""){
