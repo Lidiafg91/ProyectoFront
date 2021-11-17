@@ -23,6 +23,7 @@ function App() {
 const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
 console.log(logged);
+console.log("edu hola")
 
 useEffect( async() => {  
   
