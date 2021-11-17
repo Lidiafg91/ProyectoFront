@@ -22,6 +22,7 @@ function App() {
 // useState pintarloggin(true/false)
 const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
+console.log(logged);
 
 useEffect( async() => {  
   
