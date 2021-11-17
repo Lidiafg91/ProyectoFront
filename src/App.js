@@ -24,6 +24,8 @@ const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
 console.log(logged);
 console.log("edu hola")
+console.log("edu hola 2")
+
 
 useEffect( async() => {  
   
