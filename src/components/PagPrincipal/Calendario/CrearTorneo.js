@@ -53,7 +53,7 @@ function CrearTorneo() {
 
     return (
         <div> 
-          <br/><br/> <br/> <br/><br/><br/><br/><br/><br/><br/>    
+          <br/><br/> <br/> <br/><br/>   
         <input type="text" placeholder="Nombre del torneo" onChange={(e) => setNombreTorneo(e.target.value)}></input>
         {arrayPartidas.map((data, index) => {
             return (

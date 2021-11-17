@@ -3,14 +3,14 @@ import "./App.css"
 import { BrowserRouter as Router, Switch, Route, Link ,Redirect} from "react-router-dom";
 import AltaUsuario from "./components/loggin/AltaUsuario";
 import Loggin from "./components/loggin/Loggin";
-import CajaDerecha from "./components/PagPrincipal/CajaDerecha";
-import Clasificacion from "./components/PagPrincipal/Clasificacion";
-import Equipos from "./components/PagPrincipal/Equipos";
-import HeaderPagPrincipal from "./components/PagPrincipal/HeaderPagPrincipal";
-import Menu from "./components/PagPrincipal/Menu";
-import Noticias from "./components/PagPrincipal/Noticias";
-import Perfil from "./components/PagPrincipal/Perfil";
-import Calendario from "./components/PagPrincipal/Calendario";
+import CajaDerecha from "./components/PagPrincipal/CajaDerecha/CajaDerecha";
+import Clasificacion from "./components/PagPrincipal/Clasificacion/Clasificacion";
+import Equipos from "./components/PagPrincipal/Equipos/Equipos";
+import HeaderPagPrincipal from "./components/PagPrincipal/Header/HeaderPagPrincipal";
+import Menu from "./components/PagPrincipal/Menu/Menu";
+import Noticias from "./components/PagPrincipal/Noticias/Noticias";
+import Perfil from "./components/PagPrincipal/Perfil/Perfil";
+import Calendario from "./components/PagPrincipal/Calendario/Calendario";
 import CrearEquipo from "./components/PagPrincipal/Equipos/CrearEquipo";
 import BuscadorEquipos from "./components/PagPrincipal/Equipos/BuscadorEquipos";
 import {  useDispatch, useSelector  } from "react-redux";
@@ -19,15 +19,9 @@ import { useEffect } from "react";
 import {getUser} from "./services/user";
 
 function App() {
-// useState pintarloggin(true/false)
 const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
-console.log(logged);
-console.log("edu hola")
-console.log("edu hola 2");
-console.log("enrique hola");
 
-// cambios michael
 useEffect( async() => {  
   
   if(document.cookie != ""){
@@ -55,7 +49,7 @@ useEffect( async() => {
          <>       
          {logged === true && (
            <div className="fondoHomePage">
-           <div  className="buscadorPrincipal"> 
+           <div> 
            <HeaderPagPrincipal/>
            </div>
            <div className="cuerpo">
@@ -64,11 +58,11 @@ useEffect( async() => {
                <Menu/>
               </div>
                  <Route  exact path="/">
-                   <div className="fondo"><Noticias /></div>
+                   <div className=""><Noticias /></div>
                  </Route>
                  <Switch> 
                  <Route path="/Noticias">
-                   <div className="fondo"><Noticias /></div>
+                   <div className=""><Noticias /></div>
                  </Route>
                  <Route  path="/Loggin">
                    <div className="fondo"><Loggin /></div>
@@ -93,7 +87,7 @@ useEffect( async() => {
                  </Route>
                  </Switch>
              </Router>
-             <div className="cajaDrchaPrincipal"> 
+             <div> 
              <CajaDerecha/>
              </div>
            </div>
@@ -104,10 +98,10 @@ useEffect( async() => {
                 <Router>
                   <Switch> 
                   <Route  exact path="/">
-                    <div className="fondo"><Loggin /></div>
+                    <div ><Loggin /></div>
                   </Route>
                   <Route  path="/AltaUsuario">
-                    <div className="fondo"><AltaUsuario /></div>
+                    <div ><AltaUsuario /></div>
                     
                   </Route>
                   <Redirect from="*" to="/" />

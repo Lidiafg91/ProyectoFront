@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import {  useDispatch } from "react-redux";
-import Equipos from "../Equipos";
+// import Equipos from "../Equipos";
 import {addEquipos,subirImagen} from "../../../services/user";
 
 

@@ -21,14 +21,13 @@ function VerTorneos() {
       
       console.log("PUES AQUI ESTA", mostrarTorneo);
 
-      const cambiarResultado = (event,index) => {
+      const cambiarResultado = (event) => {
         const prueba = resultados;
         prueba.splice(0, 1, event.target.value); 
         // prueba.push(event.target.value)  
         setResultados(prueba);
         console.log("PROBANDO LA PRUEBA",resultados);
         setBotonGanador(true);
-        console.log("index cambiarResultado",index)
       };
       
       const enviarGanador = async() => {
@@ -56,13 +55,13 @@ function VerTorneos() {
                     {equipos.equipo1}
                     {" "}{" "+"<-----VS----->"+" "}{" "}
                     {equipos.equipo2}{" "}
-                    {datosUsuario.admin? (<select value={resultados[index]} onChange={(event)=>cambiarResultado(event,index)}>
+                    {datosUsuario.admin? (<select value={resultados[index]} onChange={(event)=>cambiarResultado(event, index)}>
                     <option selected >Seleccionar Ganador</option>
                         <option value={equipos.equipo1}>{equipos.equipo1}</option>
                         <option value={equipos.equipo2}>{equipos.equipo2}</option>  
                     </select>)  
                     :
-                   <div></div>
+                   ""
                     }
                     
                   </div>
