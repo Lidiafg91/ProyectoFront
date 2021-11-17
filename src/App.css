@@ -1,0 +1,152 @@
+*{
+color:rgb(243, 13, 13);
+}
+
+.fondo{
+  background: url(./img/fondo.jpg);
+  height: 100vh;
+  width: 100%;
+}
+
+
+.cajaLogin {
+  color:aliceblue;
+  width: 24em;
+  height: 15em;
+  border-color: rgb(124, 123, 123);
+  border-style: ridge;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 47em;
+    
+}
+
+.inputLogin{
+  display: contents;
+
+}
+
+.btnLogin{
+  background-color: rgb(60, 168, 66);
+  border: none;
+  color: white;
+  padding: 9px; 
+  text-decoration: none;
+  margin: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 8px;
+  width: 180px; 
+  text-align:center;
+}
+
+.linkRegistrar{
+  color:aliceblue;
+  text-align: center;
+}
+
+.fondoHomePage{
+  background: url(./img/mapamundo.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.fondoPagCalendario{
+  background: url(./img/mapamundo.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.buscadorPrincipal {
+  color: aliceblue;
+  height: 4em;
+  border-color: rgb(124, 123, 123);
+  border-style: ridge;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.laterales{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.MenuPrincipal {
+  color: aliceblue;
+  display: flex;
+  border-color: rgb(124, 123, 123);
+  border-style: solid;
+  width: 15em;
+  height: 859px;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.cajaDrchaPrincipal{
+  color: aliceblue;
+  border-color: rgb(124, 123, 123);
+    border-style: solid;
+    width: 15em;
+    height: 859px;
+ 
+}
+
+.btnMenu{
+  color: aliceblue;
+  margin: 3px;
+  width: 10em;
+  background-color: rgb(255, 81, 0);
+  border-color: rgb(255, 123, 0);
+  cursor: pointer;
+}
+
+.Centro{
+  width: 100%;
+  border-color: red;
+  border-style: solid;
+}
+
+
+.cajaPagPrincipal{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.cuerpo{
+  display: flex;
+  justify-content: space-between;
+}
+.Calendario{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.nomTorneo{
+  margin: 30px;
+}
+
+.torneo{
+  border-style: groove;
+  border-width: thick;
+  background-color: #666665b5;
+  font-family: fantasy;
+}
+.equipTorneo{
+  border-style: groove;
+  padding: 12px;
+  color: black;
+  font-size: 25px;
+}
