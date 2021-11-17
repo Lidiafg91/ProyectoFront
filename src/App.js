@@ -27,7 +27,7 @@ console.log("edu hola")
 console.log("edu hola 2");
 console.log("enrique hola");
 
-
+// cambios michael
 useEffect( async() => {  
   
   if(document.cookie != ""){
