@@ -194,6 +194,7 @@ await axios.get("http://127.0.0.1:8081/traerTorneo")
        url: "http://127.0.0.1:8081/enviarGanador",
        data: {
         resultados: data.resultados[0],
+        indice:data.indice,
        },
      });console.log("-----ENVIANDO AXIOS ADD GANADOR-------",data)
     
