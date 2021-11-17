@@ -24,7 +24,7 @@ const dispatch = useDispatch();
 const logged = useSelector(selectLogged);
 console.log(logged);
 console.log("edu hola")
-
+// probando michael
 useEffect( async() => {  
   
   if(document.cookie != ""){
