@@ -3,12 +3,9 @@ import {  useDispatch } from "react-redux";
 import { loggin, addDataUser } from "../../features/userSlice";
 import {getUser} from "../../services/user";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "../../App.css"
-
-// import axios from "axios";
+import "./logginYRegistro.css"
 
 
-//cuando 
 
 function Loggin () { 
 
@@ -53,6 +50,7 @@ let reset = () => {
 }
 
   return ( 
+    <div className="fondo">
     <div className="cajaLogin"> 
           <div><h2>Noticias Gamer</h2></div>
       <div className="inputLogin">
@@ -65,6 +63,7 @@ let reset = () => {
       <Link to="/AltaUsuario" >registrate aqui</Link>
       </div>
     </div> 
+    </div>
   ); 
 } 
 
