@@ -3,7 +3,7 @@ import {  useDispatch } from "react-redux";
 import {addUser} from "../../services/user";
 import { addDataUser } from "../../features/userSlice";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "../../App.css"
+import "./logginYRegistro.css"
 
 
 
@@ -45,6 +45,7 @@ function AltaUsuario(props) {
 
 
   return (
+    <div className="fondo">
     <div className="cajaLogin">
       <div><h2>REGISTRATE</h2></div>
       <div className="inputLogin">
@@ -60,6 +61,7 @@ function AltaUsuario(props) {
       
       
       
+    </div>
     </div>
   );
 }
